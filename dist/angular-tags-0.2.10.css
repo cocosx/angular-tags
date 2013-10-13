@@ -32,9 +32,12 @@
   color: red;
   text-decoration: none;
 }
-.decipher-tags .decipher-tags-taglist .decipher-tags-tag i,
-.decipher-tags .decipher-tags-taglist .decipher-tags-tag span.glyphicon-remove {
+.decipher-tags .decipher-tags-taglist .decipher-tags-tag i {
   cursor: pointer;
+}
+.decipher-tags .decipher-tags-taglist .decipher-tags-tag-bootstrap span.glyphicon-remove {
+  cursor: pointer;
+  font-size: 75%;
 }
 .decipher-tags .decipher-tags-input {
   border: none;

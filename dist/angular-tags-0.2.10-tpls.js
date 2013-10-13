@@ -40,7 +40,7 @@ angular.module("templates/tags.html", []).run(["$templateCache", function($templ
 
 angular.module("templates/tag.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/tag.html",
-    "<span class=\"label label-primary\" data-ng-class=\"getClasses(tag)\">{{tag.name}} <span class=\"glyphicon glyphicon-remove\" data-ng-click=\"remove(tag)\"></span></span>");
+    "<span class=\"decipher-tags-tag-bootstrap label label-primary\" data-ng-class=\"getClasses(tag)\">{{tag.name}} <span class=\"glyphicon glyphicon-remove\" data-ng-click=\"remove(tag)\"></span></span>");
 }]);
 
 /*global angular*/
