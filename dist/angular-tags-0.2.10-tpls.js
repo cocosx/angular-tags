@@ -2,7 +2,7 @@ angular.module('decipher.tags.templates', ['templates/tags.html', 'templates/tag
 
 angular.module("templates/tags.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/tags.html",
-    "<div class=\"decipher-tags\" data-ng-mousedown=\"selectArea()\">\n" +
+    "<div class=\"decipher-tags  form-control\" data-ng-mousedown=\"selectArea()\">\n" +
     "\n" +
     "  <div class=\"decipher-tags-taglist\">\n" +
     "    <span data-ng-repeat=\"tag in tags|orderBy:orderBy\"\n" +
@@ -40,13 +40,7 @@ angular.module("templates/tags.html", []).run(["$templateCache", function($templ
 
 angular.module("templates/tag.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/tag.html",
-    "<span class=\"decipher-tags-tag\"\n" +
-    "      data-ng-class=\"getClasses(tag)\">{{tag.name}}\n" +
-    "      <i class=\"icon-remove\"\n" +
-    "         data-ng-click=\"remove(tag)\">\n" +
-    "      </i>\n" +
-    "</span>\n" +
-    "");
+    "<span class=\"label label-primary\" data-ng-class=\"getClasses(tag)\">{{tag.name}} <span class=\"glyphicon glyphicon-remove\" data-ng-click=\"remove(tag)\"></span></span>");
 }]);
 
 /*global angular*/
