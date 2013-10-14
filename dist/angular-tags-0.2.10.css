@@ -1,8 +1,7 @@
 .decipher-tags {
   min-height: 24px;
   border: 1px solid #ccc;
-  margin: 0px 10px;
-  padding: 4px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
 }
 .decipher-tags .decipher-tags-taglist {
   margin-bottom: 4px;
@@ -49,4 +48,8 @@
 .decipher-tags .decipher-tags-controls {
   margin-top: 8px;
   min-height: 28px;
+}
+.decipher-tags.form-control {
+  height: auto;
+  min-height: 34px;
 }
